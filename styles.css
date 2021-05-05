@@ -158,8 +158,8 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     align-self: center;
     margin-bottom: 30px;
 
@@ -250,4 +250,77 @@ button:hover {
     box-shadow: 0px 1px 2px lightgrey;
     border: .5px solid #d1d1d1;
     cursor: pointer;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .nav_right_side_links {
+        align-self: center;
+        width: 30vw;
+    }
+
+    .searchbar {
+        width: 250px;
+    }
+
+    .navbar_container {
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-family: Roboto, sans-serif;
+        font-size: .8rem;
+        color: darkslategrey;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar_container:nth-of-type(2) {
+        height: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        font-family: Roboto, sans-serif;
+        font-size: .8rem;
+        color: darkslategrey;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar_left_side:nth-of-type(2) {
+        flex: 1 0 100%;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .footer_left_side {
+        flex: 1 0 100%;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+    }
+
+    .footer_right_side {
+        flex: 1 0 100%;
+        align-self: center;
+        justify-self: center;
+        display: block;
+    }
+
+    .footer_container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
