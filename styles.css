@@ -48,8 +48,8 @@ table {
 }
 
 body {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .navbar_container {
@@ -60,6 +60,8 @@ body {
     font-family: Roboto, sans-serif;
     font-size: .8rem;
     color: darkslategrey;
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
@@ -91,6 +93,7 @@ body {
     padding-right: 0px;
 }
 
+
 .nav-image {
     width: 30px;
     border-radius: 50%;
@@ -99,4 +102,24 @@ body {
 
 .nav_right_side_links {
     align-self: center;
+}
+
+.footer_container {
+    background-color: #f2f2f2;
+}
+
+
+.homepage-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.main {
+    background-color: brown;
+    flex-grow: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
