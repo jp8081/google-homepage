@@ -47,24 +47,56 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .navbar_container {
+    height: 65px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: aliceblue;
+    align-content: center;
+    font-family: Roboto, sans-serif;
+    font-size: .8rem;
+    color: darkslategrey;
 
 }
 
 .navbar_left_side {
-    justify-self: flex-start;
+    flex: 1 1 200px;
+    align-self: center;
 }
 
 .navbar_right_side {
-    justify-self: end;
-    flex-grow: ;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
-.nav_ul, .nav_li, .navbar_right_side {
+.nav_ul, .nav_li, .navbar_left_side {
     display: inline;
+}
+
+.nav_li {
+    align-self: center;
+    padding-right: 16px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.nav_li:last-child {
+    padding-right: 0px;
+}
+
+.nav-image {
+    width: 30px;
+    border-radius: 50%;
+    height: auto;
+}
+
+.nav_right_side_links {
+    align-self: center;
 }
