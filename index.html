@@ -14,44 +14,56 @@
     <section class=homepage-section>
         <nav class="navbar_container">
             <div class="navbar_left_side">
-                <a class="nav_li" href="#">About</a>
-                <a class="nav_li" href="#">Store</a>
+                <a class="nav_li nav_text" href="#">About</a>
+                <a class="nav_li nav_text" href="#">Store</a>
             </div>
             <div class="navbar_right_side">
             <div class="nav_li nav_right_side_links">
-                <a class="nav_li" href="#">Gmail</a>
-                <a class="nav_li" href="#">Images</a>
+                <a class="nav_li nav_text" href="#">Gmail</a>
+                <a class="nav_li nav_text" href="#">Images</a>
             </div>
-            <div class="nav_li"><span class="material-icons">apps</span></div>
+            <div class="nav_li"><a class="text-decoration-none" href="#"><span class="material-icons apps_icon">apps</span></a></div>
             <a class="nav_li" href="#"><img class="nav-image" src="https://lh3.google.com/u/0/ogw/ADGmqu9oMdbJQb36oDzufzvoit9YFizNqwZ8R7ax1vFB=s64-c-mo"></a>
             </div>
         </nav>
 
         <main class="main">
-            <div>
-                <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
+            <!-- Google Logo -->
+            <div class=google_image_container>
+                <img class="google_image" src=https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png>
             </div>
 
-            <div>
-
-            </div>
-
-            <div>
-
+            <!-- Search Bar-->
+            <div class="searchbar_container">
+            <form>
+                <div class="searchbar">
+                    <span class="material-icons" id=search_icon >search</span>
+                    <input type="search" id="searchbar" name="searchbar">
+                    <a class="mic_icon" href="#"><span class="material-icons" id=mic_icon >mic</span></a>
+                </div>
+             <!-- Search Buttons-->
+                <div class="search_buttons_container">
+                <button class="button_search" type="submit">Google Search</button><button type="submit">I'm Feeling Lucky</button>
+                </div>
+            </form>
             </div>
         </main>
 
+         <!-- Bottom half of page Spacing-->
+        <div class="bottom_spacing">
+        </div>
+
         <footer class="navbar_container footer_container">
             <div class="navbar_left_side">
-                <a class="nav_li" href="#">Advertising</a>
-                <a class="nav_li" href="#">Business</a>
-                <a class="nav_li" href="#">How Search Works</a>
+                <a class="nav_li nav_text" href="#">Advertising</a>
+                <a class="nav_li nav_text" href="#">Business</a>
+                <a class="nav_li nav_text" href="#">How Search Works</a>
             </div>
             <div class="navbar_right_side">
                 <div class="nav_li nav_right_side_links">
-                    <a class="nav_li" href="#">Privacy</a>
-                    <a class="nav_li" href="#">Terms</a>
-                    <a class="nav_li" href="#">Settings</a>
+                    <a class="nav_li nav_text" href="#">Privacy</a>
+                    <a class="nav_li nav_text" href="#">Terms</a>
+                    <a class="nav_li nav_text" href="#">Settings</a>
                 </div>
             </div>
         </footer>
